@@ -141,7 +141,6 @@ jQuery(function(){
 	        var waypoint = new Waypoint({
 	            element: document.getElementById('progress-bar'),
 	            handler: function(direction) {
-	                console.log('Scrolled to waypoint!');
 	                jQuery('.progress-bar li').each(function() {
 	                        var widthBar = jQuery(this).find('.over').attr('data-percent');
 	                        jQuery(this).find('.over').animate({
@@ -159,13 +158,12 @@ jQuery(function(){
 		"use strict";
 
 		jQuery('.map').googleMapAPI({
-			marker: 'assets/images/icon.png',
 			mapInfoContent: '.map-info',
-			streetViewControl: false,
-			mapTypeControl: false,
-			scrollwheel: false,
-			panControl: false,
-			zoomControl: false
+			streetViewControl: true,
+			mapTypeControl: true,
+			scrollwheel: true,
+			panControl: true,
+			zoomControl: true
 		});
 	}
 

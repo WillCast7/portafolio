@@ -561,14 +561,10 @@ a:hover, a:focus, a.active {
   color: #b7b7b7;
   font-weight: 700;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0 0 58px;
-  padding: 110px 0 12px;
-  position: relative;
   z-index: 1;
 }
 
 .main-heading:before {
-  position: absolute;
   content: "";
   z-index: -1;
   left: 300px;
@@ -580,27 +576,54 @@ a:hover, a:focus, a.active {
   background: #b7b7b7;
 }
 
-.main-heading.heading2 {
-  padding: 0 0 12px;
-  margin: 0 0 23px;
-}
-
 .main-heading.heading2 .fst-lt {
   top: 65px;
   left: -16px;
 }
 
 .main-heading .fst-lt {
-  font-size: 210px;
-  line-height: 140px;
+  font-size: 150px;
+  line-height: 150px;
   color: #252525;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
   left: 0;
   top: 0;
   display: block;
   z-index: -1;
+}
+
+.aboutMeList{
+  font-size: medium;
+}
+
+.a-fst-lt {
+  order: -1;
+  font-size: 150px;
+  line-height: 150px;
+  color: #252525;
+  font-weight: 600;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.b-fst-lt {
+  order: -1;
+  font-size: 150px;
+  line-height: 150px;
+  color: #4eccbf;
+  font-weight: 600;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.description{
+  font-size: x-large;
 }
 
 /*------------------------------------------------------------------
@@ -660,7 +683,7 @@ a:hover, a:focus, a.active {
 .abt-sec .img-holder {
   width: 23%;
   float: left;
-  border: 12px solid #fff;
+  border: 2px solid #fff;
 }
 
 .abt-sec .txt-holder {

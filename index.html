@@ -27,14 +27,16 @@
         <link rel="stylesheet" href="resources/css/responsive.css">
     </head>
     <body>
+        
         <div id="wrapper">
             <header id="header">
                 <a href="#" class="nav-opener text-center md-round"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-            
                 <!-- Boton -->
                 <nav id="nav">
                     <ul id="js-navbar-menu" class="list-unstyled text-center">
-                        <li><a href="#about">Sobre mi</a></li>
+                        <li>
+                            <a href="#about" id="aboutMeLink"></a>
+                        </li>
                         <li><a href="#education">Educacion</a></li>
                         <li><a href="#skill">Conocimientos</a></li>
                         <li><a href="#service">Habilidades</a></li>
@@ -45,6 +47,7 @@
                     </ul>
                 </nav>
             </header>
+            
             <!-- main of the page -->
 		    <main id="main" role="main">
 
@@ -55,11 +58,12 @@
                             <div class="col-xs-12 col-sm-9 col-sm-offset-3">
                                 <!-- caption of the page -->
                                 <div class="caption">
-                                    <span class="txt">Hola</span>
-                                    <h1>Soy <strong class="text-uppercase"><span class="clr">William </span>Castaño</strong></h1>
-                                    <p>Analista | Desarrollador Full stack</p>
+                                    <span class="txt" id="presentationHi">s</span>
+                                    <h1 id="presentationIam"></h1>
+                                    <h1><strong class="text-uppercase"><span class="clr">William </span>Castaño</strong></h1>
+                                    <p id="presentationProfession"></p>
                                     <div class="holder">
-                                        <a href="resources/images/HdV.pdf" class="btn text-center lg-round"><i class="fa fa-download"></i>Hoja de Vida</a>
+                                        <a href="resources/images/HdV.pdf" class="btn text-center lg-round"><i class="fa fa-download"></i>CV</a>
                                         <!-- socail network of the page -->
                                         <ul class="list-unstyled socail-network">
                                             <li><a href="https://wa.me/573182452522"><i class="fa fa-whatsapp"></i></a></li>
@@ -80,33 +84,33 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <h2 class="main-heading text-uppercase"><span class="fst-lt">Sobre mi</span>Sobre mi</h2>
-                                    <!-- abt holder of the page -->
-                                    <div class="abt-holder">
-                                        <div class="img-holder">
-                                            <img src="resources/images/willcast.jpg" alt="image description" class="img-responsive">
+                                    <h2 class="main-heading text-uppercase" id="aboutMeTitle">
+                                    </h2>
+                                    <span class="a-fst-lt bg-white" id="aboutMeBg"></span>
+                                        <!-- abt holder of the page -->
+                                        <div class="abt-holder">
+                                            <div class="img-holder">
+                                                <img src="resources/images/willcast.jpg" alt="Foto Hombre guapo :3" class="img-responsive d-flex">
+                                            </div>
+                                            <div class="txt-holder">
+                                                <h3 class="text-uppercase">Nombre: <a>William Castaño</a></h3>
+                                                <ul class="list-unstyled personal-list">
+                                                    <li>- <strong id="aboutMeItem1"></strong></li>
+                                                    <li>- <span class="aboutMeList" id="aboutMeItem2"></span></li>
+                                                    <li>- <span class="aboutMeList" id="aboutMeItem3"></span></li>
+                                                    <br>
+                                                    
+                                                </ul>
+                                                
+                                                <p id="aboutMeResume1"></p>
+                                                <p id="aboutMeResume2"></p>
+                                                <p id="aboutMeResume3"></p>
+                                                <p id="aboutMeResume4"></p>
+                                                
+                                                <p class="aboutMeList" id="aboutMePrhase"></p>
+                                                <span class="name">WillCast</span>
+                                            </div>
                                         </div>
-                                        <div class="txt-holder">
-                                            <h3 class="text-uppercase">Nombre: <a>William Castaño</a></h3>
-                                            <span class="sub-title">Analista | Desarrollador Full stack</span>
-                                            <ul class="list-unstyled personal-list">
-                                                <li><strong>Tercer Puesto en la Comunity Fest and Code 2021</strong></li>
-                                                <li><strong>Ganador del programa Mision TIC 2022</strong></li>
-                                                <li><strong>Residencia: </strong>&nbsp; <address>Cali, Valle del Cauca - Colombia</address></li>
-                                                <li><strong>Profesion: </strong>&nbsp; Técnico en sistemas, Técnico programador de software</li>
-                                                <li><strong>Gmail: </strong>&nbsp;<a href="mailto:williamisrael210@gmail.com">williamisrael210@gmail.com</a></li>
-                                                <li><strong>Intereses: </strong>&nbsp; Me caracteriza mi entusiasmo, siempre con deseos de aprender y evolucionar, autodidacta, tiempre buscando aplicar buenas prácticas de programación</li>
-                
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                            </ul>
-                                            <p>-La verdadera sabiduría está en saber que nunca dejas de aprender.</p>
-                                            <span class="name">WillCast</span>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -119,12 +123,8 @@
                         <div class="container">
                             <div class="row">
                                 <header class="col-xs-12 header">
-                                    <h2 class="main-heading heading2 text-uppercase"><strong class="fst-lt">E</strong>Educación</h2>
-                                    <span>
-                                        Actualmente soy estudiante autodidacta, siempre a la vanguardia, siempre en evolucion
-                                        <br>
-                                        Ganador del programa Mision TIC 2022
-                                    </span>
+                                    <h2 class="main-heading heading2 text-uppercase" id="educationTitle"></h2>
+                                    <strong class="a-fst-lt d-flex position-absolute" id="educationBg"></strong>
                                 </header>
                             </div>
                             <div class="row">
@@ -134,31 +134,9 @@
                                         <li>
                                             <time class="time" datetime="2017-02-03 20:00">2012-2013</time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">Técnico en Sistemas</span>
+                                                <span class="uni-name" id="educationTitle1"></span>
                                                 <span class="sub-title">Sena</span>
-                                                <p>Graduado de técnico de sistemas, donde adquirí los conocimientos acerca de la arquitectura de computadores y di los primeros pasos en la programación</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <time class="time" datetime="2017-02-03 20:00">2014-2015</time>
-                                            <div class="txt-holder">
-                                                <span class="uni-name">Técnico en programación de software</span>
-                                                <span class="sub-title">Sena</span>
-                                                <p>
-                                                    Complete la etapa lectiva, tomando un perfil en el área de sistemas con enfoque a lo digital.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <time class="time" datetime="2017-02-03 20:00">2020-2021</time>
-                                            <div class="txt-holder">
-                                                <span class="uni-name">Técnico en programación de software</span>
-                                                <span class="sub-title">Sena</span>
-                                                <p>
-                                                    Inicio nuevamente mis estudios en programación de software ya habiendo adquirido experiencia en programación y bases de datos.
-                                                   <br>
-                                                   Cursado el programa técnico con miras hacia la carrera profesional.
-                                                </p>
+                                                <p id="educationDescription1"></p>
                                             </div>
                                         </li>
                                         <li>
@@ -166,9 +144,15 @@
                                             <div class="txt-holder">
                                                 <span class="uni-name">MINTIC 2022</span>
                                                 <span class="sub-title">Universidad Pontifice Bolivariana de Medellin</span>
-                                                <p>
-                                                    curse La ruta de aprendizaje sobre las tecnologías de la información,
-                                                    aprendiendo nnuevos lenguajes y nuevos retos
+                                                <p id="educationDescription2"></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <time class="time" datetime="2017-02-03 20:00">2023 -</time>
+                                            <div class="txt-holder">
+                                                <span class="uni-name" id="educationTitle3"></span>
+                                                <span class="sub-title">Sena</span>
+                                                <p id="educationDescription3">
                                                 </p>
                                             </div>
                                         </li>
@@ -184,83 +168,82 @@
                     <div class="skill-sec bg-dark">
                         <div class="container">
                             <div class="row">
-                                <header class="col-xs-12 header">
-                                    <h2 class="main-heading heading2 text-uppercase"><strong class="fst-lt">E</strong>Experiencias</h2>
-                                    <span>
-                                        <strong>
-                                            Puedes centrarte en las barreras o bien en escalar el muro y redefinir el problema.
-                                        </strong>
-                                    </span>
-                                    <span>
-                                        Trabajar como freelance me ha otorgado experiencia muy valiosa y con ella desarrollar habilidades,
-                                        siempre demostrandome que no importa el reto siempre puede ser superado.
-                                        <br>
-                                        durante estos años me he topado con diferentes retos, retos que me han llevado a expandir mis conocimientos a otras tecnologias 
-                                        y lenguajes, aunque siempre en constante aprendizaje estas son algunas de las tecnologias con las que he trabajado:
-                                    </span>
+                                <header class="col-xs-12 d-flex header justify-content-around">
+                                    <h2 class="main-heading text-uppercase" id="technologiesTitle">
+                                    </h2>
+                                    <strong class="a-fst-lt d-flex" style="display: flex;" id="technologiesBg"></strong>
+                                    <span style="display: flex;" class="description"  id="technologiesDescription"></span>
                                 </header>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-10 col-sm-offset-2">
-                                    <div class="skill-col bg-light col-sm-5" style="margin-right: 4%; align-content: center; text-align: center;">
+                                <div class="col-xs-12 d-flex position-relative justify-content-between">
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/sql.png" alt="image description" class="img-logo">
                                         <span class="txt">
                                             SQL (SQL Server, Mysql, PostGreSQL)
                                         </span>
                                     </div>
 
-                                    <div class="skill-col bg-light col-sm-5" style="margin-left: 4%; margin-bottom: 30px; align-content: center; text-align: center;">
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/js.png" alt="image description" class="img-logo">
                                         <span class="txt">
-                                            <strong>Javascript</strong> (Angular, React, React Native, Vue, Typescript, jQuery, Node, Strappy)
+                                            <strong>Javascript</strong> (Angular, React, Vue)
                                         </span>
                                     </div>
-                                    <div class="skill-col bg-light col-sm-5" style="margin-right: 4%; margin-bottom: 30px; align-content: center; text-align: center;">
+
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/php.png" alt="image description" class="img-logo">
                                         <span class="txt">
                                         <strong>PHP </strong>(Laravel)
                                         </span>
                                     </div>
 
-                                    <div class="skill-col bg-light col-sm-5" style="margin-left: 4%; margin-bottom: 30px; align-content: center; text-align: center;">
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/java.png" alt="image description" class="img-logo">
                                         <span class="txt">
                                            <strong> JAVA </strong>(SE, SprinngBoot)
                                         </span>
                                     </div>
 
-                                    <div class="skill-col bg-light col-sm-5" style="margin-right: 4%; margin-bottom: 30px; align-content: center; text-align: center;">
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/ruby.png" alt="image description" class="img-logo">
                                         <span class="txt">
                                             <strong>Ruby </strong>(Ruby on rails)
                                         </span>
                                     </div>
 
-                                    <div class="skill-col bg-light col-sm-5" style="margin-left: 4%; margin-bottom: 30px; align-content: center; text-align: center;">
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/python.png" alt="image description" class="img-logo">
                                         <span class="txt">
                                             <strong>Python</strong>
                                         </span>
                                     </div>
 
-                                    <div class="skill-col bg-light col-sm-5" style="margin-right: 4%; margin-bottom: 30px; align-content: center; text-align: center;">
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/jenkins.png" alt="image description" class="img-logo">
                                         <span class="txt">
                                             <strong>Jenkins - Sonarqube </strong> sonarlint
                                         </span>
                                     </div>
 
-                                    <div class="skill-col bg-light col-sm-5" style="margin-left: 4%; margin-bottom: 30px; align-content: center; text-align: center;">
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/git.png" alt="image description" class="img-logo">
                                         <span class="txt">
                                             <strong>Git </strong> Bitbucket
                                         </span>
                                     </div>
 
-                                    <div class="skill-col bg-light col-sm-5" style="margin-right: 4%; margin-bottom: 30px; align-content: center; text-align: center;">
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
                                         <img src="resources/images/docker.png" alt="image description" class="img-logo">
                                         <span class="txt">
                                             <strong>Docker</strong>
+                                        </span>
+                                    </div>
+
+                                    <div class="skill-col bg-light col-sm-3" style="margin-bottom: 5px; height: 173px; align-content: center; text-align: center;">
+                                        <img src="resources/images/linux.png" alt="image description" class="img-logo">
+                                        <span class="txt">
+                                            <strong>Linux</strong>
                                         </span>
                                     </div>
 
@@ -276,19 +259,10 @@
                         <div class="container">
                             <div class="row">
                                 <header class="col-xs-12 header">
-                                    <h2 class="main-heading heading2 text-uppercase">
-                                        <strong class="fst-lt">
-                                            H
-                                        </strong>
-                                        Habilidades
-                                    </h2>
-                                    <span>
-                                        Las habilidades cumplen un papel fundamental en la vida misma, 
-                                        con disciplina y perseverancia se logra desarrollarlas, fortalecerlas, crear nuevas.
-                                        De ellas depende la formulación de una estrategia para cumplir una meta o superar un reto.
-                                        <br>
-                                        Un conjunto de habilidades puestos a disposición de las personas pueden brindar servicios extremadamente útiles para la sociedad.
-                                    </span>
+                                        <h2 class="main-heading text-uppercase" id="skillsTitle">
+                                        </h2>
+                                        <strong class="b-fst-lt d-flex" style="display: flex;" id="skillsBg"></strong>
+                                        <span style="display: flex;" id="skillsDescription"></span>
                                 </header>
                             </div>
                             <div class="row">
@@ -300,49 +274,36 @@
                                             <span class="icon">
                                                 <i class="fa fa-bug"></i>
                                             </span>
-                                            <h3 class="text-uppercase">
-                                                Análizar
+                                            <h3 class="text-uppercase" id="skillsSubtitle1">
                                             </h3>
-                                            <p>
-                                                poseo la capacidad de analizar un problema y verlo desde diferentes angulos, siempre poniendo en practica la experiencia adquirida.
+                                            <p id="skillsSubDescription1">
                                             </p>
                                         </div>
                 
                                         <!-- slide -->
                                         <div class="slide text-center">
                                             <span class="icon"><i class="fa fa-rocket"></i></span>
-                                            <h3 class="text-uppercase">
-                                                Vanguardia
+                                            <h3 class="text-uppercase"41 1 id="skillsSubtitle2">
                                             </h3>
-                                            <p>
-                                                El conocimiento es un arma poderosa, considero que el conocimiento es una de las cosas mas importantes que se posee,
-                                                me gusta el aprendizaje, estudiar y estar al dia con los temas y tecnologias que estan a la vanguardia, herramientas y tecnologias que
-                                                van surgiendo al final estan hechas para que el desarrollo sea mejor, mas optimo.
+                                            <p id="skillsSubDescription2">
                                             </p>
                                         </div>
                 
                                         <!-- slide  -->
                                         <div class="slide text-center">
                                             <span class="icon"><i class="fa fa-trophy "></i></span>
-                                            <h3 class="text-uppercase">
-                                              Retos  
+                                            <h3 class="text-uppercase"41  id="skillsSubtitle3">
                                             </h3>
-                                            <p>
-                                                Considero que los retos nos permiten movernos de nuestra zona de confort, ellos sacan quien en realidad somos, 
-                                                ellos nos otorgan sabiduria y conocimiento.
+                                            <p id="skillsSubDescription3">
                                             </p>
                                         </div>
                 
                                         <!-- slide -->
                                         <div class="slide text-center">
                                             <span class="icon"><i class="fa fa-cogs"></i></span>
-                                            <h3 class="text-uppercase">
-                                                Adaptación
+                                            <h3 class="text-uppercase"  id="skillsSubtitle4">
                                             </h3>
-                                            <p>
-                                                La vida es un ciclo de constante evolución.
-                                                <br>
-                                                De esta manera sabemos cuán importante es la capacidad de aprender de una manera rápida, de apasionarse con cada tema nuevo y evolucionar con la tecnología.
+                                            <p id="skillsSubDescription4">
                                             </p>
                                         </div>
                                     </div>
@@ -358,14 +319,10 @@
                         <div class="container">
                             <div class="row">
                                 <header class="col-xs-12 header">
-                                    <h2 class="main-heading heading2 text-uppercase">
-                                        <strong class="fst-lt">
-                                            E
-                                        </strong>
-                                        Experiencia
+                                    <h2 class="main-heading text-uppercase" id="experienceTitle">
                                     </h2>
-                                    <span>
-                                        La experiencia son un conjunto de habilidades otorgadas por la suma entre el tiempo y la práctica.
+                                    <span class="a-fst-lt bg-white" id="experienceBg"></span>
+                                    <span id="experienceResume">
                                     </span>
                                 </header>
                             </div>
@@ -374,120 +331,92 @@
                                     <!-- edu list of the page -->
                                     <ul class="edu-list list-unstyled">
                                         <li style="margin-bottom: 20px;">
-                                            <time class="time" datetime="2017-02-03 20:00">
-                                                2015-2020
+                                            <time class="time" id="experienceYear1">
                                             </time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">
-                                                    Analista de datos/Soporte técnico
+                                                <span class="uni-name" id="experienceTitle1">
                                                 </span>
-                                                <span class="sub-title">
-                                                    Grupo empresarial MR
+                                                <span class="sub-title" id="experienceSubTitle1">
                                                 </span>
-                                                <p>
-                                                    El grupo empresarial MR son un conjunto de empresas formadas por 4 CDA, un hotel  y una Empresa de deshechos hospitalarios.
-                                                    <br>
-                                                    La experiencia en estas empresas consta de Analisis de datos.
-                                                    administración y mantenimiento de redes, administración y mantenimiento de servidores y desarrollo web, gestión de procesos de seguridad informática, acompañamiento al sistema de gestión de calidad y validación de software.
+                                                <p id="experienceDescription1">
                                                 </p>
                                             </div>
                                         </li>
 
                                         <li style="margin-bottom: 20px;">
-                                            <time class="time" datetime="2023-02-03 20:00" style="padding: 10px;">
-                                                2020-2022
+                                            <time class="time" id="experienceYear2" style="padding: 10px;">
                                             </time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">
-                                                    Desarrollador web
+                                                <span class="uni-name" id="experienceTitle2">
                                                 </span>
-                                                <span class="sub-title">
-                                                    IMPROVEMENT AFO
+                                                <span class="sub-title" id="experienceSubTitle2">
                                                 </span>
-                                                <p>
-                                                    Desarrollo de varios aplicativos a la medida, Realizaba un trabajo de outsourcing a la empresa, quien contrataba con la gobernacion del 
-                                                    valle del cauca.
-                                                    <br>
-                                                    Con contratos por proyectos se hacian las reuniones con el cliente, el levantamiento de requerimientos, direccion de metodologías agiles( SCRUM ), 
-                                                    presentacion de proyecto, despliegue, documentacion, soporte y actualizaciones
+                                                <p id="experienceDescription2">
                                                 </p>
                                             </div>
                                         </li>
 
                                         <li style="margin-bottom: 20px;">
-                                            <time class="time" datetime="2017-02-03 20:00">
-                                                2021-2022
+                                            <time class="time"  id="experienceYear3">
                                             </time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">Desarrollador staff</span>
-                                                <span class="sub-title">Siesa</span>
-                                                <p>
-                                                    Soporte tecnico a aplicativo de salud en las diferentes entidades de salud de la zona costera del pais. (ZeusSalud)
+                                                <span class="uni-name" id="experienceTitle3"></span>
+                                                <span class="sub-title" id="experienceSubTitle3"></span>
+                                                <p id="experienceDescription3">
                                                 </p>
                                             </div>
                                         </li>
 
                                         <li style="margin-bottom: 20px;">
-                                            <time class="time" datetime="2017-02-03 20:00">
-                                                2022
+                                            <time class="time"  id="experienceYear4">
                                             </time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">Freelance</span>
-                                                <span class="sub-title">Formula 1</span>
-                                                <p>
-                                                    Aplicativo de gestion de instructores, vehiculos, encuestas de la entidad.
+                                                <span class="uni-name" id="experienceTitle4"></span>
+                                                <span class="sub-title" id="experienceSubTitle4"></span>
+                                                <p id="experienceDescription4">
                                                 </p>
                                             </div>
                                         </li>
 
                                         <li style="margin-bottom: 20px;">
-                                            <time class="time" datetime="2017-02-03 20:00">
-                                                2022
+                                            <time class="time"  id="experienceYear5">
                                             </time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">Freelance</span>
-                                                <span class="sub-title">-</span>
-                                                <p>
-                                                    Aplicativo de gestion de Asesores y asesorias, para el reporte, manejo y pago de los mismos.
+                                                <span class="uni-name" id="experienceTitle5"></span>
+                                                <span class="sub-title" id="experienceSubTitle5"></span>
+                                                <p id="experienceDescription5">
                                                 </p>
                                             </div>
                                         </li>
                                         
                                         <li style="margin-bottom: 20px;">
-                                            <time class="time" datetime="2017-02-03 20:00">
-                                                2022
+                                            <time class="time"  id="experienceYear6">
                                             </time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">Desarrollador full stack</span>
-                                                <span class="sub-title">Spartan Hill</span>
-                                                <p>
-                                                    Desarrollo de aplicativo para evento en el salvador con pagos con criptomonedas, desarrollo y mantenimiento de cripto wallet y 
-                                                    aplicacion para procesar pagos por medio de las criptomonedas.
+                                                <span class="uni-name" id="experienceTitle6"></span>
+                                                <span class="sub-title" id="experienceSubTitle6"></span>
+                                                <p id="experienceDescription6">
                                                 </p>
                                             </div>
                                         </li>
                                         <li style="margin-bottom: 20px;">
-                                            <time class="time" datetime="2017-02-03 20:00">
-                                                2023 -
+                                            <time class="time"  id="experienceYear7">
                                             </time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">Freelance</span>
-                                                <span class="sub-title">-</span>
-                                                <p>
-                                                    Desarrollo de aplicativo base para futuros proyectos Angular 15 - Laravel 9 Postgresql.
+                                                <span class="uni-name" id="experienceTitle7"></span>
+                                                <span class="sub-title" id="experienceSubTitle7"></span>
+                                                <p id="experienceDescription7">
                                                 </p>
                                             </div>
                                         </li>
 
                                         <li style="margin-bottom: 20px;">
-                                            <time class="time" datetime="2017-02-03 20:00">
-                                                2022 -
+                                            <time class="time"  id="experienceYear8">
                                             </time>
                                             <div class="txt-holder">
-                                                <span class="uni-name">Desarrollador full stack</span>
-                                                <span class="sub-title">Punto Red</span>
-                                                <p>
-                                                    Diversas aplicaciones, entre ellas una aplicacion interna para procesos de clientes, automatizacion de procesos entre otras.
+                                                <span class="uni-name" id="experienceTitle8"></span>
+                                                <span class="sub-title" id="experienceSubTitle8"></span>
+                                                <p id="experienceDescription8">
                                                 </p>
                                             </div>
                                         </li>
@@ -505,8 +434,8 @@
                         <div class="container">
                             <div class="row">
                                 <header class="col-xs-12 header">
-                                    <h2 class="main-heading heading2 text-uppercase"><strong class="fst-lt">P</strong>Portafolio</h2>
-                                    <span>&nbsp; Proyectos trabajados de manera independiente</span>
+                                    <h2 class="main-heading heading2 text-uppercase" id="portfolioTitle"></h2>
+                                    <span id="portfolioDescription"></span>
                                 </header>
                             </div>
                             <div class="row">
@@ -514,10 +443,6 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h3 class="card-portfolio-title">COMFECO</h3>
-                                    <p class="card-text">
-                                        Proyecto frontend que consume un api en 
-                                        <strong>Angular</strong>
-                                    </p>
                                     <img src="resources/images/conf4.jpg" />
                                   </div>
                                 </div>
@@ -527,11 +452,6 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h3 class="card-portfolio-title">SINHANTB</h3>
-                                    <p class="card-text">
-                                        Proyecto a la medida que administra casos de tuberculosis farmacorresistente, sensible, lepra, etc... 
-                                        <br> 
-                                        Consta de una api en <strong>Laravel</strong> consumida por un front en <strong>Angular</strong> y una base de datos en <strong>postgresql</strong>.
-                                    </p>
                                     <img src="resources/images/Sinhantb2.jpg" />
                                   </div>
                                 </div>
@@ -541,11 +461,6 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h3 class="card-portfolio-title">ANT</h3>
-                                    <p class="card-text">
-                                        Proyecto a la medida que administra y gestiona las asesorias o tramites que tiene un asesor con la empresa y manejo de la comision y facturacion.
-                                        <br> 
-                                        Consta de una api en <strong>Laravel</strong> consumida por un front en <strong>Angular</strong> y una base de datos en <strong>postgresql</strong>.
-                                    </p>
                                     <img src="resources/images/an2.jpg" />
                                   </div>
                                 </div>
@@ -555,17 +470,6 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h3 class="card-portfolio-title">FRE VALLE DEL CAUCA</h3>
-                                    <p class="card-text">
-                                        Aplicacion a la medida que administra los productos de una institucion que surte las droguerias del municipio, pasando por caracteristicas como:
-                                        <br>
-                                        Fecha de vencimiento.
-                                        <br>
-                                        permisos para vender el producto a esa drogueria.
-                                        <br>
-                                        la venta no debe ser directa, sino cotizacion y venta encima de la cotizacion. Y demas caracteristicas del negocio interno.
-                                        <br>
-                                        Consta de un monolito unico en <strong>Laravel</strong> y una base de datos en <strong>mysql</strong>.
-                                    </p>
                                     <img src="resources/images/fre1.jpg" />
                                   </div>
                                 </div>
@@ -575,11 +479,6 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h3 class="card-portfolio-title">FORMULA 1</h3>
-                                    <p class="card-text">
-                                        Proyecto a la medida que administra usuarios, instructores, vehiculos y encuestas a los clientes.
-                                        <br> 
-                                        Consta de un monolito unico en <strong>Laravel</strong> y una base de datos en <strong>mysql</strong>.
-                                    </p>
                                     <img src="resources/images/f2.jpg" />
                                   </div>
                                 </div>
@@ -596,10 +495,8 @@
                         <div class="container">
                             <div class="row">
                                 <header class="col-xs-12 header">
-                                    <h2 class="main-heading heading2 text-uppercase"><strong class="fst-lt">R</strong>Referentes</h2>
-                                    <span>Es importante mantenerse educado mantenerse actualizado, pero también debemos alimentar nuestro espíritu con literatura.
-                                        Este alimento nos forja un pensamiento ante las diferentes situaciones de la vida misma
-                                    </span>
+                                    <h2 class="main-heading heading2 text-uppercase" id="referencesTitle"></h2>
+                                    <span id="referencesDescription"></span>
                                 </header>
                             </div>
                             <div class="row">
@@ -611,26 +508,24 @@
                                             <div class="img-holder round">
                                                 <img src="resources/images/wss.png" alt="image description" class="img-responsive">
                                             </div>
-                                            <q>La educación es un poder; y somos conscientes de que es el arma más poderosa para transformar mentalidades,
-                                                por ende, un mecanismo para modificar sociedades; y consecuentemente, para cambiar el mundo</q>
-                                            <cite>____William Soto</cite>
+                                            <q id="referenceResume1"></q>
+                                            <cite id="referenceName1"></cite>
                                         </blockquote>
                                         <!-- slide of the page -->
                                         <blockquote class="slide">
                                             <div class="img-holder round">
                                                 <img src="resources/images/linus.png" alt="image description" class="img-responsive">
                                             </div>
-                                            <q>La mayoría de los buenos programadores programan no porque esperan que les paguen o que el público los adore, sino porque programar es divertido. </q>
-                                            <cite>____Linus Torvalds</cite>
+                                            <q id="referenceResume2"></q>
+                                            <cite id="referenceName2"></cite>
                                         </blockquote>
                                         <!-- slide of the page -->
                                         <blockquote class="slide">
                                             <div class="img-holder round">
                                                 <img src="resources/images/freddy.png" alt="image description" class="img-responsive">
                                             </div>
-                                            <q>Tu techo, a nivel de debilidad y a nivel intelectual es una elección. ¡La gente que dice “es que yo no sirvo para esto!" en mi opinion son perdedores, y no son perdedores porque no puedan.
-                                                Son perdedores porque tomaron la decisión de no poder. Todo el mundo puede todo, lo único que hay que hacer es intentarlo y nunca parar de aprender. </q>
-                                           <cite>____Freddy Vega</cite>
+                                            <q id="referenceResume3"></q>
+                                            <cite id="referenceName3"></cite>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -745,7 +640,10 @@
             <!-- back top of the page -->
 		    <span id="back-top" class="text-center md-round fa fa-caret-up"></span>
 
-        </div>  
+        </div> 
+
+        <!-- include constants -->
+        <script src="resources/js/constants.js"></script>
 
         <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyDfI624nPMEKE1g3DBAHiiFOD5pb2NB5Sk"></script>
         <!-- include jQuery -->
@@ -754,8 +652,6 @@
         <script src="resources/js/plugins.js"></script>
         <!-- include jQuery -->
         <script src="resources/js/jquery.main.js"></script>
-
-        <div id="style-changer" data-src="style-changer.html"></div>
         
     </body>
 </html>
