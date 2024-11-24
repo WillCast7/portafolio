@@ -70,7 +70,7 @@ export default function Proyects(){
                 itemClass="carousel-item-padding-40-px">
                   {subTitleLists.map((subtitleItem, index) => (
                     <div onClick={()=>{openModal(index)}} className="mx-1 max-w-sm rounded overflow-hidden shadow-2xl black-background cursor-pointer hover:bg-white hover:text-black">
-                      <div className="px-6 py-4">
+                      <div className="px-6 py-4" key={subtitleItem}>
                           <p className="text-right text-sm green-text font-semibold"> {t('portfolioEnterprise' + index)} </p>
                         <div className="font-bold text-xl"> {t('portfolioName' + index)} </div>
                           <p className="text-xs pb-3"> {t('portfolioYears' + index)} </p>

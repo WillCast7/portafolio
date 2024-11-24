@@ -26,7 +26,7 @@ export default function Enterprises(){
             <div className="flex flex-wrap w-1/2 px-7 justify-center items-center mr-10">
                 {subTitleLists.map((subtitleItem, index) => (
                     <button 
-                        key={index}
+                        key={subtitleItem}
                         className=" h-full text-center m-3 bg-tealish hover:bg-white hover:text-black"
                         onClick={() => getInformation(index)}>
                             {t('experienceSubTitle' + index)}

@@ -82,7 +82,7 @@ const CompanyModal: React.FC<ModalProps> = ({ isOpen, closeModal, modalIndex }) 
                                 slidesToSlide={1}
                                 swipeable>
                                 {imageLists.map((image, index) => (
-                                    <img src={image} alt="" />
+                                    <img src={image} alt="" key={index}/>
                                 ))}
                             </Carousel>
                         <div className="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
